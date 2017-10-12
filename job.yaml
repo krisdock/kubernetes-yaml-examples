@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: echo
-        image: busybox
+        image: centos:7
         command:
          - "bin/bash"
          - "-c"
