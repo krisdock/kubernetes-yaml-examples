@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: example-job
+spec:
+  completions: 10
+  parallelism: 2
+  template:
+    metadata:
+      name: example-job
+    spec:
+      containers:
+      - name: echo
+        image: busybox
+        command:
+         - "bin/bash"
+         - "-c"
+         - "echo Hello"
+      restartPolicy: Never
