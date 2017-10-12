@@ -21,4 +21,4 @@ spec:
         - containerPort: 80
       volumes:
       - name: cache-volume
-        emprtyDir: {}
+        emptyDir: {}
